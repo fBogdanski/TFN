@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GameDex</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>GameDex</h1>
+
+    <div id="search-bar">
+      <input type="text" id="searchInput" placeholder="Search Pokemon by name or ID...">
+      <button id="searchBtn" type="button">Search</button>
+    </div>    
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+  </header>
+  <main>
+    <section id="search-result">
+      <h2>Search Result</h2>
+      <div class="pokemon-card detailed">
+        <p>Use the search bar to find a Pokemon!</p>
+      </div>
+    </section>
+    <section id="pokemon-list">
+      <h2>Pokémon</h2>
+      <div class="grid"></div>
+      <div id="pagination">
+        <button id="prevBtn" type="button" disabled>Previous</button>
+        <button id="nextBtn" type="button">Next</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
